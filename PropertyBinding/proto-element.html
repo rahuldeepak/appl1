@@ -1,0 +1,22 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-input/iron-input.html">
+
+<dom-module id="proto-element">
+  <template>
+    <p>This is <b>{{owner}}'s</b> proto element</b></p>
+    <input is="iron-input" bind-value="{{owner}}" placeholder="Type is your name...">
+  </template>
+</dom-module>
+
+
+
+<script>
+    Polymer({
+      is: 'proto-element',
+
+      ready: function() {
+        this.owner = "Rahul";
+      },
+
+    });
+</script>

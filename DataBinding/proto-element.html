@@ -1,0 +1,20 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="proto-element">
+  <template>
+    This is <b>{{owner}}'s</b> proto element</b>
+  </template>
+</dom-module>
+
+
+
+<script>
+    Polymer({
+      is: 'proto-element',
+
+      ready: function() {
+        this.owner = "Rahul";
+      },
+
+    });
+</script>
